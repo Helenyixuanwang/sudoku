@@ -1,0 +1,173 @@
+/* Rules Page Styles */
+
+.rules-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.rules-content {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.rule-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rule-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.rule-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.rule-section h4 {
+    color: var(--secondary-color);
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.rule-section p {
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.rule-section ul,
+.rule-section ol {
+    margin-left: 2rem;
+    color: var(--text-color);
+}
+
+.rule-section li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+/* Difficulty Info Cards */
+.difficulty-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.diff-card {
+    background-color: var(--bg-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.diff-card h4 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.diff-card p {
+    color: #555;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+/* Credits Section */
+.credits-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.credits-section h3 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.credits-content p {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.contact-link span {
+    font-size: 1.25rem;
+}
+
+.credits-note {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .rules-container {
+        padding: 1rem;
+    }
+
+    .rules-content {
+        padding: 1.5rem;
+    }
+
+    .rule-section ul,
+    .rule-section ol {
+        margin-left: 1.25rem;
+    }
+
+    .difficulty-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-link {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}

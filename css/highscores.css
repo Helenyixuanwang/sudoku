@@ -1,0 +1,193 @@
+/* High Scores Page Styles */
+
+.highscores-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.leaderboard-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--white);
+    color: var(--secondary-color);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: var(--bg-color);
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.leaderboard-section {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.leaderboard-section h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.leaderboard-table thead {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.leaderboard-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.leaderboard-table th:first-child {
+    border-top-left-radius: 4px;
+}
+
+.leaderboard-table th:last-child {
+    border-top-right-radius: 4px;
+}
+
+.leaderboard-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.leaderboard-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.leaderboard-table tbody tr:hover {
+    background-color: var(--bg-color);
+}
+
+.leaderboard-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Special styling for top 3 */
+.rank-1 {
+    background-color: #fff9e6;
+}
+
+.rank-1:hover {
+    background-color: #fff3cc;
+}
+
+.rank-2 {
+    background-color: #f5f5f5;
+}
+
+.rank-2:hover {
+    background-color: #eeeeee;
+}
+
+.rank-3 {
+    background-color: #fff5f0;
+}
+
+.rank-3:hover {
+    background-color: #ffebe0;
+}
+
+/* Challenge CTA */
+.challenge-cta {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.challenge-cta h3 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.challenge-cta p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .highscores-container {
+        padding: 1rem;
+    }
+
+    .leaderboard-section {
+        padding: 1rem;
+        overflow-x: auto;
+    }
+
+    .leaderboard-table {
+        font-size: 0.875rem;
+    }
+
+    .leaderboard-table th,
+    .leaderboard-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .tab-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .challenge-cta {
+        padding: 2rem 1rem;
+    }
+
+    .challenge-cta h3 {
+        font-size: 1.5rem;
+    }
+
+    .challenge-cta p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .leaderboard-table {
+        font-size: 0.75rem;
+    }
+
+    .leaderboard-table th,
+    .leaderboard-table td {
+        padding: 0.5rem 0.25rem;
+    }
+
+    /* Stack table headers on very small screens if needed */
+    .leaderboard-section h3 {
+        font-size: 1.25rem;
+    }
+}

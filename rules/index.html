@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules - Sudoku Dojo</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/rules.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="../assets/images/icons8-sudoku-64.png" alt="Sudoku Icon" class="nav-logo">
+            <h1>Sudoku Dojo</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/selection/">Play</a></li>
+            <li><a href="/rules/" class="active">Rules</a></li>
+            <li><a href="/highscores/">High Scores</a></li>
+            <li><a href="/login/">Login</a></li>
+            <li><a href="/register/">Register</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="rules-container">
+        <h2 class="page-title">How to Play Sudoku</h2>
+
+        <div class="rules-content">
+            <section class="rule-section">
+                <h3>Game Objective</h3>
+                <p>The goal of Sudoku is to fill a grid with numbers so that each row, column, and sub-grid contains all of the digits without repeating.</p>
+            </section>
+
+            <section class="rule-section">
+                <h4>For 9x9 Sudoku:</h4>
+                <ul>
+                    <li>Fill the 9×9 grid with numbers 1 through 9</li>
+                    <li>Each row must contain the numbers 1-9, without repetition</li>
+                    <li>Each column must contain the numbers 1-9, without repetition</li>
+                    <li>Each of the nine 3×3 sub-grids must contain the numbers 1-9, without repetition</li>
+                </ul>
+            </section>
+
+            <section class="rule-section">
+                <h4>For 6x6 Sudoku:</h4>
+                <ul>
+                    <li>Fill the 6×6 grid with numbers 1 through 6</li>
+                    <li>Each row must contain the numbers 1-6, without repetition</li>
+                    <li>Each column must contain the numbers 1-6, without repetition</li>
+                    <li>Each of the six 2×3 sub-grids must contain the numbers 1-6, without repetition</li>
+                </ul>
+            </section>
+
+            <section class="rule-section">
+                <h3>How to Play</h3>
+                <ol>
+                    <li>Start with the given numbers (shown in a different shade)</li>
+                    <li>Use logic to determine which numbers go in the empty cells</li>
+                    <li>Look for rows, columns, or sub-grids that are almost complete</li>
+                    <li>Use process of elimination to narrow down possibilities</li>
+                    <li>Continue until all cells are filled correctly</li>
+                </ol>
+            </section>
+
+            <section class="rule-section">
+                <h3>Tips for Beginners</h3>
+                <ul>
+                    <li>Start with the easiest cells first</li>
+                    <li>Look for rows, columns, or sub-grids with the most given numbers</li>
+                    <li>Use pencil marks to track possible numbers for each cell</li>
+                    <li>Be patient - Sudoku is about logic, not guessing</li>
+                    <li>Practice regularly to improve your skills</li>
+                </ul>
+            </section>
+
+            <section class="rule-section">
+                <h3>Difficulty Levels</h3>
+                <div class="difficulty-info">
+                    <div class="diff-card">
+                        <h4>Easy (6x6)</h4>
+                        <p>Perfect for beginners. Smaller grid with more given numbers to help you learn the basics.</p>
+                    </div>
+                    <div class="diff-card">
+                        <h4>Medium (9x9)</h4>
+                        <p>Standard Sudoku puzzle with a balanced number of given clues.</p>
+                    </div>
+                    <div class="diff-card">
+                        <h4>Hard (9x9)</h4>
+                        <p>Challenging puzzles with fewer given numbers requiring advanced strategies.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="credits-section">
+            <h3>Credits</h3>
+            <div class="credits-content">
+                <p><strong>Made by:</strong> Helen's Web Development Team</p>
+                <div class="contact-links">
+                    <a href="mailto:sudoku@example.com" class="contact-link">
+                        <span>📧</span> Email Us
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+                        <span>💻</span> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+                        <span>💼</span> LinkedIn
+                    </a>
+                </div>
+                <p class="credits-note">This is a mock website created for educational purposes as part of a web development course.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sudoku Dojo. All rights reserved.</p>
+    </footer>
+</body>
+</html>

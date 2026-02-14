@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Game - Sudoku Dojo</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="../assets/images/icons8-sudoku-64.png" alt="Sudoku Icon" class="nav-logo">
+            <h1>Sudoku Dojo</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/selection/" class="active">Play</a></li>
+            <li><a href="/rules/">Rules</a></li>
+            <li><a href="/highscores/">High Scores</a></li>
+            <li><a href="/login/">Login</a></li>
+            <li><a href="/register/">Register</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="game-container">
+        <div class="game-header">
+            <h2 class="page-title">Easy Sudoku - 6x6 Grid</h2>
+        </div>
+
+        <div class="game-info-bar">
+            <div class="difficulty-display">
+                <span>Difficulty: </span>
+                <strong>Easy</strong>
+            </div>
+            <div class="timer">
+                <span>⏱️</span>
+                <span>05:42</span>
+            </div>
+        </div>
+
+        <div class="sudoku-grid grid-6x6">
+            <!-- Row 1 -->
+            <div class="sudoku-cell given"><input type="number" value="1" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="3" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="5" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+
+            <!-- Row 2 -->
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="5" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="2" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="3" readonly min="1" max="6"></div>
+
+            <!-- Row 3 -->
+            <div class="sudoku-cell given"><input type="number" value="3" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="2" readonly min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="5" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="1" readonly min="1" max="6"></div>
+
+            <!-- Row 4 -->
+            <div class="sudoku-cell given"><input type="number" value="5" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="6" readonly min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="1" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="2" readonly min="1" max="6"></div>
+
+            <!-- Row 5 -->
+            <div class="sudoku-cell given"><input type="number" value="6" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="1" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="4" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+
+            <!-- Row 6 -->
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="3" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="6" readonly min="1" max="6"></div>
+            <div class="sudoku-cell"><input type="number" min="1" max="6"></div>
+            <div class="sudoku-cell given"><input type="number" value="5" readonly min="1" max="6"></div>
+        </div>
+
+        <div class="game-controls">
+            <button class="btn btn-secondary">Reset</button>
+            <button class="btn btn-primary">Check Solution</button>
+            <button class="btn btn-secondary">New Game</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sudoku Dojo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
