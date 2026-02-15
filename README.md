@@ -136,25 +136,49 @@ Yixuan Wang
 ## 📝 Writeup Responses
 
 ### Most Challenging Piece
-[Your response - at least 3 sentences]
+The most challenging part was creating the Sudoku grid borders using CSS nth-child selectors to get the 3x3 sub-grids correct. Working with HTML and CSS felt familiar from my 2021 bootcamp experience, but using AI assistance (Claude) made the workflow much more efficient. This assignment took me approximately [X] hours total including learning GitHub Pages deployment.
 
 ### Mobile-Friendly Decisions
-[Your response - at least 3 sentences]
+For mobile responsiveness, I used CSS @media queries to detect screen width below 768px. I implemented color scheme changes - the navbar turns red and background turns yellow on mobile to make the responsive design visually obvious. The Sudoku grid cells shrink proportionally, and spacing is reduced to fit smaller screens while maintaining readability.
 
 ### Design Considerations
-[Your response - at least 3 sentences]
+I chose a blue and gray color scheme using CSS variables for consistency across all pages. I'm particularly proud of the active navigation state that shows users which page they're on, and the hover effects on the game selection cards. I used CSS Grid for layouts and added smooth transitions to make the interface feel polished despite being pure HTML/CSS.
 
 ### Future Features
-[Your response - at least 3 sentences]
+Given more time, I would add JavaScript to validate Sudoku solutions in real-time and highlight conflicts. I'd implement a working countdown timer and the ability to save game progress using localStorage. I'd also add a puzzle generator to create unique Sudoku boards rather than having static pre-filled grids.
 
 ### Time Spent
-[Your response - number of hours]
+Initial setup & planning: ~1 hour
+Making changes, testing, debugging: ~3-4 hours
+GitHub setup & deployment troubleshooting: ~2-3 hours
+Video recording & final touches: ~1 hour
+Subtotal: ~6-8 hours
+
+Independent Work (On My Own):
+
+Customizing "Sudoku Dojo" branding
+Updating footer
+Adding images, adjusting colors
+Fixing links manually
+Learning/reviewing concepts
+Recording video, practicing
+Estimated: ~3-5 hours
+
+Learning Curve:
+
+Understanding GitHub Pages
+Reviewing HTML/CSS from 2021
+Understanding @media queries
+Estimated: ~1-2 hours
+
+Approximately 12-14 hours in total
 
 ## 📚 Resources Used
 
-- Google Fonts (if used)
-- Color palette inspiration: [source if any]
-- Icon library: [if any]
+- Icons: Icons8 (https://icons8.com) - Sudoku icon
+- Some interaction with AI assistance from Claude (Anthropic)
+- No external CSS libraries or frameworks used
+- Color scheme: Personal design choices
 
 ## 📄 License
 
